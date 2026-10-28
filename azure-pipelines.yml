@@ -68,3 +68,6 @@ stages:
             artifact: drop
           - script: echo "Deploying $(Pipeline.Workspace)/drop ..."
             displayName: Deploy (placeholder)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
